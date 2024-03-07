@@ -6,7 +6,7 @@
 /*   By: shmohamm <shmohamm@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/30 08:41:09 by shmohamm          #+#    #+#             */
-/*   Updated: 2024/01/10 15:59:18 by shmohamm         ###   ########.fr       */
+/*   Updated: 2024/03/07 15:28:05 by shmohamm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,6 @@ void	move_fractal(t_data *data, double dx, double dy)
 
 void	move_julia(t_data *data, double dx, double dy)
 {
-	double	old_center_x;
-	double	old_center_y;
-
-	old_center_x = data->center_x;
-	old_center_y = data->center_y;
 	data->center_x += dx / (data->zoom);
 	data->center_y += dy / (data->zoom);
 }

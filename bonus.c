@@ -6,7 +6,7 @@
 /*   By: shmohamm <shmohamm@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 10:35:22 by 42ad              #+#    #+#             */
-/*   Updated: 2024/01/16 13:10:53 by shmohamm         ###   ########.fr       */
+/*   Updated: 2024/03/07 15:28:48 by shmohamm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,6 @@
 
 void	ft_zoom(t_data *data)
 {
-	double	old_minreal;
-	double	old_mini;
-
-	old_minreal = data->minreal;
-	old_mini = data->min_i;
 	data->zoom *= 1.2;
 	mlx_clear_window(data->mlx_ptr, data->win_ptr);
 	mandelbrot(data);
@@ -26,11 +21,6 @@ void	ft_zoom(t_data *data)
 
 void	ft_dezoom(t_data *data)
 {
-	double	old_minreal;
-	double	old_mini;
-
-	old_minreal = data->minreal;
-	old_mini = data->min_i;
 	data->zoom /= 1.2;
 	mlx_clear_window(data->mlx_ptr, data->win_ptr);
 	mandelbrot(data);

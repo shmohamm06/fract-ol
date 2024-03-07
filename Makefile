@@ -62,8 +62,6 @@ fclean: clean
 	@echo " ░ ░     ░░   ░   ░   ▒   ░          ░      ░ ░ ░ ▒    ░ ░   "
 	@echo "          ░           ░  ░░ ░                   ░ ░      ░  ░  "
 	@echo "                                   "
-	@echo "Created: $(words $(OBJS)) object file(s) for Fractol"
-	@echo "Created: $(NAME)"
 	@echo "Removed: $(words $(OBJS)) object file(s) for Fractol"
 	@echo "Removed: $(NAME)"
 
