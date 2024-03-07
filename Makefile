@@ -6,7 +6,7 @@ YELLOW		= \033[33m
 
 NAME = fractol
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -fsanitize=address -g3
 FRAMEWORKS = -framework OpenGL -framework AppKit
 LIB_DIR = libft
 MLX_DIR = mlx_fractol
